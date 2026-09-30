@@ -66,9 +66,19 @@ Nel modulo l'ultima voce si mostra come **"Altro"** e rende obbligatorio il camp
 ## 4. Flussi
 
 ### 4.1 Brusa inserisce una richiesta
-Portale → nuova scheda **"Richieste"** → **"Nuova richiesta"** → modulo §2 → Salva.
-La richiesta nasce in stato **"Da prendere a carico"**. Finché Epico non l'ha importata, Brusa può modificarla o
-eliminarla. Dopo l'import è in sola lettura: le modifiche passano da Epico.
+Portale → nuova scheda **"Richieste"** → **"Nuova richiesta"** → modulo §2.
+
+| Stato | Chi la vede | Brusa | Epico |
+|---|---|---|---|
+| **Bozza** | solo Brusa | salva anche incompleta, modifica, elimina, **Invia a Epico** | non la vede |
+| **Inviata** ("Da prendere a carico") | Brusa + Epico (badge, notifica) | modifica (Epico riceve "Aggiornata il …"), **Ritira in bozza**, elimina | Apri lavoro / Collega |
+| **Presa a carico** (lavoro aperto) | entrambi | sola lettura | come §4.2 |
+
+- In bozza nessun campo è obbligatorio; i controlli completi e il **numero richiesta** arrivano all'invio (le bozze
+  eliminate non consumano numeri). Accanto alla data di registrazione c'è la **data di invio**.
+- "Apri lavoro" usa sempre i dati più recenti della richiesta.
+- Dopo l'import la richiesta è in sola lettura: le modifiche passano da Epico.
+- Le richieste create prima di questa versione sono considerate "Inviate".
 
 ### 4.2 Epico importa (un clic)
 AGENDA admin → Portali Clienti → **"Richieste cantieri"** (badge con il numero di richieste nuove).

@@ -8,3 +8,4 @@
 | 30.09.2026 | Riga verde quando il lavoro ha `Data / Ora (Check-Out)` | Scelta CBOR: criterio oggettivo |
 | 30.09.2026 | Preventivo: EruFATT manda all'AGENDA, insieme al PDF già allegato al dossier, tipo, numero, data, imponibile, totale e valuta del documento | I preventivi esistono già in EruFATT e il PDF arriva già nel dossier (migr. 0055); servono i dati leggibili per le colonne |
 | 30.09.2026 | Il cantiere vede solo preventivi/offerte, mai fatture o altri allegati | Riservatezza: il portale mostra solo ciò che serve al cantiere |
+| 30.09.2026 | Richieste con stato **Bozza → Inviata → Presa a carico**: Epico vede solo le inviate; Brusa può modificare (con avviso a Epico) o ritirare in bozza finché il lavoro non è aperto; numero richiesta assegnato all'invio | Richiesta CBOR: il cantiere prepara con calma e decide quando inviare; nessun numero sprecato per le bozze |
