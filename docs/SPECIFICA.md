@@ -27,7 +27,7 @@ senza mapping.
 | 2 | Marca e modello natante | `Natante / Veicolo / Macchinario (Tipo) / Oggetto` | testo | sì | Es. "Pardo 43" |
 | 3 | Numero di targa | `Numero di targa` | testo | no | Maiuscolo, es. "TI 1234" |
 | **Cliente finale** |||||
-| 4 | Cognome cliente finale | `Cognome` | testo | sì | Proprietario del natante |
+| 4 | Cognome cliente finale | `Cognome` | testo | sì | Proprietario del natante (il cliente del lavoro, `Clienti`, resta il cantiere) |
 | 5 | Nome cliente finale | `Nome` | testo | no | |
 | **Ubicazione** |||||
 | 6 | Luogo di stazionamento | `Luogo di lavorazione` | scelta | sì | Lista porti dell'AGENDA (vedi §3) + "Altro" |
@@ -75,7 +75,7 @@ AGENDA admin → Portali Clienti → **"Richieste cantieri"** (badge con il nume
 Per ogni richiesta non importata:
 
 - **"Apri lavoro"**: crea il lavoro con `create_lavoro_mongo_first` copiando i campi §2 (2–11) e aggiungendo:
-  - `Clienti: [<ninox_id del cliente del portale>]` (Cantiere Nautico Brusa, configurato sull'utente portale);
+  - `Clienti: [<ninox_id del cliente del portale>]` (Cantiere Nautico Brusa, configurato sull'utente portale): è il cliente del lavoro, di apertura e di fatturazione; `Cognome` e `Nome` sono solo il proprietario della barca;
   - `Stato del lavoro: "Registrato"`;
   - `Data ora Check-in`: data e ora dell'import (Europe/Zurich), modificabile poi nella scheda lavoro;
   - `Ricevente`: utente admin che importa.
